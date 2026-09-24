@@ -13,7 +13,6 @@ operational reliability.
 
 ## High-Level Architecture
 
-Worker Request Center
     Application
         |
         v
@@ -26,11 +25,11 @@ Worker Request Center
         |                |
         v                v
     Database Layer   Notification Service
-    (SQL Server)         |
-                         v
+    (SQL Server)          |
+                          v
                   Email Notification
-                         |
-                         v
+                          |
+                          v
                   Operational Team
 
 ## Component Description
@@ -53,7 +52,8 @@ requirements
 
 ### Database Layer
 
-SQL Server stores monitoring-related information such as: - Configuration data
+SQL Server stores monitoring-related information such as: - Monitoring
+history - Configuration data - Processing status - Notification records
 
 ### Notification Service
 
