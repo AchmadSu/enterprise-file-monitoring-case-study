@@ -4,7 +4,7 @@
 
 An enterprise monitoring solution designed to monitor application storage utilization, identify threshold breaches, and provide automated notifications for operational teams.
 
-This project focuses on backend service implementation, monitoring workflow, and notification automation.
+This case study focuses on backend service implementation, monitoring workflow, data processing, and notification automation.
 
 ---
 
@@ -19,7 +19,7 @@ Responsibilities:
 - Designed data processing logic
 - Integrated notification mechanism
 - Troubleshot and resolved application issues
-- Improved system reliability
+- Improved system reliability and maintainability
 
 ---
 
@@ -32,7 +32,6 @@ Responsibilities:
 
 ### Database
 - MongoDB
-- SQL Server
 
 ### Integration
 - Email Notification
@@ -40,6 +39,7 @@ Responsibilities:
 
 ### Tools
 - Git
+- Docker
 - Logging Framework
 
 ---
@@ -48,24 +48,61 @@ Responsibilities:
 
 ### Storage Utilization Monitoring
 
-The system periodically checks application storage usage and evaluates the utilization level based on predefined thresholds.
+The system periodically monitors application storage utilization and evaluates usage levels based on predefined thresholds.
 
 ---
 
 ### Automated Notification
 
-When utilization reaches the configured threshold, the system generates automated notifications for responsible teams.
+When storage utilization reaches the configured threshold, the system automatically generates notifications for the responsible team to perform further action.
 
 ---
 
 ### Monitoring Workflow
 
-1. Scheduled process starts monitoring
-2. System retrieves storage information
-3. Utilization percentage is calculated
-4. Threshold validation is performed
-5. Notification is generated if required
+1. Scheduled monitoring process starts
+2. System retrieves storage utilization data
+3. Utilization percentage is calculated and validated
+4. Threshold conditions are evaluated
+5. Notification is generated when required
 
 ---
 
 ## Architecture
+
+```
+Application
+     |
+     |
+Monitoring Service
+     |
+     |
+Database
+     |
+     |
+Notification Service
+     |
+     |
+Email Notification
+```
+
+---
+
+## Key Challenges
+
+- Building a reliable automated monitoring process
+- Managing notification workflow efficiently
+- Handling background service execution
+- Maintaining data consistency during processing
+
+---
+
+## Result
+
+Implemented a structured monitoring workflow that improves operational visibility, reduces manual monitoring activities, and enables faster response to storage utilization issues.
+
+---
+
+## Note
+
+This repository contains documentation and a case study only. Source code and internal implementation details are not publicly available due to confidentiality and intellectual property restrictions.
